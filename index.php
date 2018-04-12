@@ -35,7 +35,7 @@
                 $folder = new FilesystemIterator('fichiers');
                 foreach ($folder as $key=>$value){
                     echo '<div class="col-xs-3"><a href="#" class="thumbnail">
-                            <img src="'. $value .'" alt="..."></a><form action="delete.php" method="POST"><input type="hidden" name="id" value="' . $value . '"><div>' . substr($value,8) . '</div><div><button type="submit" class="btn btn-danger">Supprimer</button></div></form></div>';
+                            <img src="'. $value .'" alt="..."></a><form action="delete.php" method="POST"><input type="hidden" name="id" value="' . $value . '"><div>' . substr($value,9) . '</div><div><button type="submit" class="btn btn-danger">Supprimer</button></div></form></div>';
                 }
                 ?>
 
