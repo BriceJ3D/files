@@ -9,7 +9,7 @@
 $uploadDir = 'fichiers/';
 if(count($_FILES['fichier']['name']) > 0){
     for($i=0; $i<count($_FILES['fichier']['name']); $i++) {
-        if (in_array($_FILES['fichier']['type'][$i],['image/gif','image/jpeg','image/gif'])
+        if (in_array($_FILES['fichier']['type'][$i],['image/gif','image/jpeg','image/png'])
             && filesize($_FILES['fichier']['tmp_name'][$i]) <= 1000000){
             $extension = pathinfo($_FILES['fichier']['name'][$i], PATHINFO_EXTENSION);
             $filename = uniqid('image') . '.' .$extension;
